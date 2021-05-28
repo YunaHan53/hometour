@@ -1,18 +1,17 @@
 package fixtures;
 
 public class Room extends Fixture {
-
 	
-	public Room(String name, String shortDescription, String longDescription) {
+	public int goForward;
+	public int goBack;
+	public String item;
+	
+	public Room(String name, String shortDescription, String longDescription, int forward, int back, String str) {
 		super(name, shortDescription, longDescription);
-		this.exits = new Room[4]; // size is your choice
+		this.goForward = forward;
+		this.goBack = back;
+		this.item = str;
 	}
 		
-	public Room[] getExits() {
-		
-	}
-		
-	public Room getExit(String direction) {
-		
-	}
+
 }
